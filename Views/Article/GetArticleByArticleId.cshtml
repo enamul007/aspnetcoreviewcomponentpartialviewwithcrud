@@ -1,0 +1,14 @@
+﻿@model Article
+
+
+
+<h1>@Model.ArticleTitle</h1>
+<p>
+    <div class="p-4">
+        @Model.ArticleContent
+    </div>
+    <a asp-controller="Article"
+       asp-action="DisplayArticlesByTutorialId"
+       asp-route-Id="@Model.TutorialId"
+       class="btn btn-outline-secondary">Back</a>
+</p>
